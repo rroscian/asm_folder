@@ -1,0 +1,64 @@
+(All EU offsets)
+
+0x231A2E0 is the fuction the AI uses to determine if a move can be used against at least one target. At 0x231A3BC, r7 is set to (AI range & 0F0), aka the nibble that the AI uses to determine the range of a move. Then there's a bunch of if-elses that determine if there's at least one target in range:
+```
+0x231A3C8: if r7 == 0 || r7 == 10 || r7 = 20 {
+	...
+	(There's a loop with 8 iterations, and 20 means hit around the user, so this part probably checks some tiles around the user to see if there are any potential targets)
+} else if r7 == 30h (0x231A4B4) {
+	0x231A4C4: Loop (20 iterations, index in r6) {
+		Checks if the move can hit each of the pokémon in the floor
+		0x231A4D0: r8: Pointer to the pokémon currently being checked
+		0x231A4EC: Call to 0x22E308C
+			r0: Pointer to the entity str of the AI-controlled pokémon
+			r1: Pointer to the entity str of the possible target
+			I haven't checked, but this function probably returns true if they are both in the same room, maybe only if they are enemies
+		If the result is 0, next iteration
+		0x231A510: Call to 0x231AA10
+			ret r0: 1 if it makes sense to use this move against this target from the AI's perspective (this is where the condition nibble is checked)
+	} ends at 0x231A520
+} else if r7 == 40h (0x231A528) {
+	(Seems like it checks for possible targets that are 1 or 2 tiles away)
+} else (0x231A610) {
+	if r7 == 50h || r7 == 80h || r7 == 90h {
+		This block is located at 0x231A620
+		0x231A628: if r7 == 50h (Straight line), sp+C = 10
+		0x231A630: if it's 80, sp+C = 1
+		0x231A63C: if it's 90, sp+C = 2
+		sp+C is probably the max distance in tiles for this move
+		...
+	} else if r7 == 60h (0x231A860) {
+		This block is located at 0x231A868
+	} else if r7 == 70h (0x231A8C0) {
+		This block is located at 0x231A8C8
+	}
+}
+```
+
+Then there's also 0x2322D0C, which is called when a move is used. This function returns the range of the move in tiles if it has a range that is distance based (range types 5, 8 or 9):
+```
+0x2322F38: Call to 0x2322D0C
+	r0 -> r7: Pointer to the pokémon str of the pokémon that used the move
+	r1 -> r6: Pointer to a local variable in the stack that stores the move's data (Reading this now this is probably the same one that is used for move effects)
+		4: Move ID
+	r2 -> r5: (?) 1 in this particular call
+	ret r0: Range (in tiles) for the used move, or 0 if the move does not have an AI range of 5, 8 or 9
+	0x2322D20: range = 0 (Stored in r4)
+	0x2322D24: Call to a 0x231B70C(* pk, * move, 1)
+		This function returns the move range halfword. If the second parameter is 0, it returns the actual range, if it's 1 it returns the AI range. This call should have passed a 0 here becasuse the move is actually being used, but it's a 1 so the AI range is used to determine the actual range. This is the bug I spoke of in #beta-tester.
+	if (AIRange == 50) {
+		range = 10
+	}
+	if (AIRange == 80 || AIRange == 90) {
+		if (AIRange == 90) {
+			range = 2
+		} else {
+			range = 1
+		}
+		0x2322D90: (There's some checks here related with two-turn moves that alter the range value depending on whether the move has been charged previously or not)
+		return range
+	} else {
+		return range
+	}
+	
+```

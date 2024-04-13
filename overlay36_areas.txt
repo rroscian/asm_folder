@@ -1,0 +1,34 @@
+2000 - 6000: Boss/Challenge engine
+31700 - 31800: Exp. Boosts
+31800 - 32000: Starters switch
+32000 - 32400: Level Scaling + Pokemon Randomizer
+32400 - 32B00: New Abilities
+32B00 - 32C00: Dynamic Cash Reward
+32C00 - 32F00: Ginseng PP
+32F00 - 32F80: Heat Avoider
+33000 - 332B0: DUMMIED MAZE
+33300 - 33580: Save Fixed Room Slots
+33580 - 33680: Ginseng Power
+33680 - 33900: Ginseng Accuracy
+33900 - 33940: Money/Bank amount
+33940 - 33980: Cautious Creeper
+33980 - 339C0: Change Speed System
+339C0 - 33A00: Paralysis Immunity
+33A00 - 33D00: Add Type Recruitment
+33E00 - 33F00: Adaptate/Marowak Bones
+33F00 - 33F80: Sandbox Swap
+33F80 - 34000: Weathers Fix
+34000 - 34080: Fix Swap Shop
+34080 - 34100: Hail Fix
+34100 - 34200: Fix Deoxys
+34200 - 34300: Fix Castform
+34300 - 34800: Item Randomizer + Golden Hall
+34800 - 34900: Moves Display
+34900 - 34980: Fix Sturdy
+34980 - 34F70: Floor Management (randomizer, difficulty options, mysteriosity)
+34F70 - 35200: New UI
+35200 - 35400: Starters Egg Moves Table
+35400 - 35800: New L-toggle UI
+35800 - 35900: Invalid Location
+35900 - 35A00: Randomizer Portrait Patch
+35A00 - 35B80: Mission Rank List Selector

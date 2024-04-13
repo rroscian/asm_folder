@@ -1,0 +1,121 @@
+Alpha List:
+011B  ; Torchic
+0370  ; Treecko (F)
+0004  ; Charmander
+0259  ; Bulbasaur (F)
+0019  ; Pikachu
+025C  ; Charmander (F)
+009E  ; Totodile
+02DD  ; Eevee (F)
+01AC  ; Piplup
+0401  ; Chimchar (F)
+01A9  ; Chimchar
+03A0  ; Skitty (F)
+009B  ; Cyndaquil
+03FE  ; Turtwig (F)
+01B6  ; Shinx
+0478  ; Vulpix-A (F)
+01E9  ; Riolu
+02F6  ; Totodile (F)
+0098  ; Chikorita
+02F3  ; Cyndaquil (F)
+0102  ; Phanpy
+027D  ; Vulpix-K (F)
+0001  ; Bulbasaur
+0376  ; Mudkip (F)
+0007  ; Squirtle
+0404  ; Piplup (F)
+0118  ; Treecko
+02F0  ; Chikorita (F)
+011E  ; Mudkip
+0373  ; Torchic (F)
+01A6  ; Turtwig
+025F  ; Squirtle (F)
+
+Reverie List:
+0121  ; Poochyena
+0407  ; Starly (F)
+00B3  ; Mareep
+034B  ; Teddiursa (F)
+01C8  ; Pachirisu
+043D  ; Gible (F)
+003A  ; Growlithe
+02A7  ; Slowpoke (F)
+01D5  ; Buneary
+029A  ; Machop (F)
+01D9  ; Glameow
+0420  ; Pachirisu (F)
+004F  ; Slowpoke
+015E  ; Numel (F)
+0151  ; Electrike
+02A5  ; Ponyta (F)
+0042  ; Machop
+0431  ; Glameow (F)
+003F  ; Abra
+038C  ; Ralts (F)
+00F3  ; Teddiursa
+0273  ; Sandshrew (F)
+015E  ; Numel
+0379  ; Poochyena (F)
+01E5  ; Gible
+0297  ; Abra (F)
+0134  ; Ralts
+030B  ; Mareep (F)
+01AF  ; Starly
+03A9  ; Electrike (F)
+001B  ; Sandshrew
+0307  ; Togepi (F)
+
+Hell List:
+007B  ; Scyther
+0362  ; Elekid (F)
+01C9  ; Buizel
+0363  ; Magby (F)
+00BE  ; Aipom
+0413  ; Cranidos (F)
+0038  ; Mankey
+0109  ; Smoochum (F)
+00F2  ; Sneasel
+02CC  ; Horsea (F)
+0164  ; Trapinch
+0421  ; Buizel (F)
+010B  ; Magby
+03B0  ; Gulpin (F)
+010A  ; Elekid
+02D3  ; Scyther (F)
+01B9  ; Budew
+0316  ; Aipom (F)
+0068  ; Cubone
+039F  ; Nosepass (F)
+0193  ; Bagon
+02C0  ; Cubone (F)
+01BB  ; Cranidos
+03EB  ; Bagon (F)
+0147  ; Nosepass
+03BC  ; Trapinch (F)
+0107  ; Tyrogue
+0411  ; Budew (F)
+0158  ; Gulpin
+034A  ; Sneasel (F)
+0193  ; Bagon
+0290  ; Mankey (F)
+
+Reality List:
+0034  ; Meowth
+0036  ; Psyduck
+0093  ;	Dratini
+00A1  ; Sentret
+00A5  ; Ledyba
+00AA  ; Chinchou
+00B1  ; Natu
+00C6  ; Murkrow
+00FF  ; Houndour
+0130  ; Taillow
+0139  ; Shroomish
+014C  ; Aron
+03BF  ; Cacnea
+03C1  ; Swablu
+0189  ; Snorunt
+018B  ; Spheal
+0423  ; Cherubi
+01ED  ; Skorupi
